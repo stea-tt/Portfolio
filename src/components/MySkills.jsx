@@ -16,25 +16,25 @@ const skills = [
 
     { name: "VMware", level: 95, category: "tools" },
     { name: "VScode", level: 95, category: "tools" },
-    { name: "Splunk", level: 95, category: "tools" },
-    { name: "Zabbix", level: 95, category: "tools" },
-    { name: "NextCloud", level: 95, category: "tools" },
-    { name: "Pfense", level: 95, category: "tools" },
-    { name: "Proxmox", level: 95, category: "tools" },
     { name: "CiscoPKT", level: 95, category: "tools" },
-
-    //??
-
-    { name: "Mysql", level: 95, category: "??" },
-    { name: "Linux", level: 95, category: "??" },
-    { name: "Windows/Server", level: 95, category: "??" },
     { name: "Azure", level: 95, category: "??" },
-    { name: "Admi sys", level: 95, category: "??" },
-    { name: "Mysql", level: 95, category: "??" },
+    
+    //Technologies & Systems
+    
+    { name: "Mysql", level: 95, category: "Technologies & Systems" },
+    { name: "Linux", level: 95, category: "Technologies & Systems" },
+    { name: "Windows/Server", level: 95, category: "Technologies & Systems" },
+    { name: "Splunk", level: 95, category: "Technologies & Systems" },
+    { name: "Zabbix", level: 95, category: "Technologies & Systems" },
+    { name: "Pfense", level: 95, category: "Technologies & Systems" },
+    { name: "NextCloud", level: 95, category: "Technologies & Systems" },
+    { name: "Proxmox", level: 95, category: "Technologies & Systems" },
+    { name: "Admin sys", level: 95, category: "Technologies & Systems" },
+    { name: "Networking", level: 95, category: "Technologies & Systems" },
 
 ];
 
-const categories = ["all", "developpement", "tools", "??"];
+const categories = ["all", "developpement", "tools", "Technologies & Systems"];
 
 export const MySkills = () => {
   const [activeCategory, setActiveCategory] = useState("all");
