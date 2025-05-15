@@ -12,11 +12,11 @@ export const AboutSection = () => {
           <div className="space-y-6 border-2 border-primary p-6 rounded-4xl">
 
             <p className="text-muted-foreground text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi doloremque, laborum odio veniam mollitia, vero quos culpa ad accusamus voluptas dolor temporibus, similique laboriosam et illo deleniti necessitatibus placeat ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque, quidem officiis modi amet deleniti ratione dicta, impedit nulla facere aut dolorum fugiat voluptates magni, sapiente itaque dignissimos! Corrupti, repellat.
+              Je suis Simon Boisneault, étudiant en deuxième année de Bachelor en Ingénierie et Cybersécurité à EFREI Paris. Passionné par l'analyse des vulnérabilités et l'administration des systèmes, je suis constamment à la recherche de nouvelles opportunités pour approfondir mes connaissances dans le domaine de la sécurité informatique. Mon parcours académique, complété par des expériences professionnelles variées, m'a permis de développer une solide compréhension des enjeux de la cybersécurité moderne.
             </p>
 
             <p className="text-muted-foreground text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsa quia dolor itaque architecto praesentium enim molestias, debitis ducimus nisi voluptatum repellat non dolorum, necessitatibus molestiae tempora, ea eius mollitia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt minima minus dignissimos quam repellat praesentium molestias? A labore placeat sed, perferendis, dignissimos recusandae aut aperiam autem tempore libero asperiores quis.
+              Mes compétences techniques incluent la maîtrise de langages comme Python et C, le développement web, ainsi que la gestion de systèmes Linux et Windows Server. J'ai également acquis une expérience pratique dans la sécurisation des réseaux, la protection des données et la virtualisation avec VMware. Mon stage récent chez TVHconsulting m'a permis de travailler sur des projets concrets comme la cartographie réseau, le paramétrage de solutions de sécurité et la migration vers Intune, renforçant ainsi mon expertise en cybersécurité opérationnelle.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -41,10 +41,9 @@ export const AboutSection = () => {
                   <Cpu className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> XXXXXXXXXX</h4>
+                  <h4 className="font-semibold text-lg"> Cybersecurity</h4>
                   <p className="text-muted-foreground">
-                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    Analyse de vulnérabilités, sécurisation de réseaux, protection des données et mise en place de systèmes de détection d'intrusion avec des outils comme Sophos et Cyberwatch.
                   </p>
                 </div>
               </div>
@@ -55,10 +54,9 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> XXXXXXXXXX</h4>
+                  <h4 className="font-semibold text-lg">Développement</h4>
                   <p className="text-muted-foreground">
-                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    Compétences en programmation avec Python, C, HTML et JavaScript. Création de scripts d'automatisation et développement de solutions pour renforcer la sécurité des systèmes.
                   </p>
                 </div>
               </div>
@@ -69,10 +67,9 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> XXXXXXXXXX</h4>
+                  <h4 className="font-semibold text-lg"> Administration Système</h4>
                   <p className="text-muted-foreground">
-                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    Gestion de machines virtuelles (Debian, pfSense, Kali, Windows Server), configuration de serveurs DNS et DHCP, et administration de réseaux complexes.
                   </p>
                 </div>
               </div>

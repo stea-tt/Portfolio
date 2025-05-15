@@ -1,35 +1,38 @@
-import { ExternalLink, Github, ArrowRight } from "lucide-react";
-
+import { ExternalLink, Github, ArrowRight, Database, Server, Globe } from "lucide-react";
 
 const Projects = [
     {
-        id : 1,
-        title : "Project 1",
-        description : "Description of the first project.",
-        image : "/",
-        tags : ["debian", "pfsense"],
-        demoUrl :"https://github.com/stea-tt",
-        githubUrl :"https://github.com/stea-tt"
+        id: 1,
+        title: "Administration Système - DNS & DHCP",
+        description: "Mise en place d'un serveur DHCP avec un DNS dynamique sous VMware utilisant bind9 pour une infrastructure réseau sécurisée et fiable.",
+        // image: "/api/placeholder/600/400",
+        tags: ["VMware", "bind9", "DHCP", "DNS", "Linux"],
+        icon: <Server size={40} className="text-primary mb-2" />
     },
     {
-        id : 2,
-        title : "Project 2",
-        description : "Description of the second project.",
-        image : "/",
-        tags : ["debian", "proxmox", "zabbix", "nextcloud", "mysql"],
-        demoUrl :"https://github.com/stea-tt",
-        githubUrl :"https://github.com/stea-tt"
+        id: 2,
+        title: "Système de location de véhicules",
+        description: "Conception et implémentation d'une base de données SQL pour une entreprise de location gérant 50 véhicules et 100 clients avec interface de gestion.",
+        image: "/api/placeholder/600/400",
+        tags: ["MySQL", "SQL", "Database Design"],
+        icon: <Database size={40} className="text-primary mb-2" />
     },
     {
-        id :3,
-        title : "Project 3",
-        description : "Description of the third project.",
-        image : "/",
-        tags : ["windows"],
-        demoUrl :"https://github.com/stea-tt",
-        githubUrl :"https://github.com/stea-tt"
+        id: 3,
+        title: "Architecture Réseau Multi-Sites",
+        description: "Conception d'un réseau d'entreprise répartie sur 4 pays avec 1000 PC et communication inter-VLAN, implémenté via Cisco Packet Tracer.",
+        image: "/api/placeholder/600/400",
+        tags: ["CiscoPKT", "Networking", "VLAN", "Routing"],
+        icon: <Globe size={40} className="text-primary mb-2" />
     },
-    
+    {
+        id: 4,
+        title: "Environnement de Virtualisation Sécurisé",
+        description: "Déploiement d'une infrastructure virtuelle avec Proxmox incluant Zabbix pour le monitoring, NextCloud pour le stockage et MySQL pour la gestion des données.",
+        image: "/api/placeholder/600/400",
+        tags: ["Proxmox", "Zabbix", "NextCloud", "MySQL", "Virtualization"],
+        icon: <Server size={40} className="text-primary mb-2" />
+    },
 ];
 
 export const ProjectsSection = () => {
@@ -37,64 +40,42 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-           Featured <span className="text-primary"> Projects </span>
+          Featured <span className="text-primary"> Projects </span>
         </h2>
-
+        
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Découvrez une sélection de mes projets en administration système, réseau et cybersécurité. 
+          Ces réalisations illustrent mes compétences techniques et ma capacité à concevoir des solutions sécurisées.
         </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {Projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-md card-hover border border-primary/20"
             >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-
               <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                <div className="flex justify-center mb-4">
+                  {project.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-center">{project.title}</h3>
+                
+                <div className="flex flex-wrap gap-2 mb-4 justify-center">
+                  {project.tags.map((tag, index) => (
+                    <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
                     </span>
                   ))}
                 </div>
-
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                
+                <p className="text-muted-foreground text-sm mb-4 text-center">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           ))}
         </div>
-
+        
         <div className="text-center mt-12">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"

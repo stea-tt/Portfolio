@@ -11,11 +11,6 @@ import { Footer } from "../components/Footer";
 export const Home = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-
-      {/* Theme Toggle */}
-
-      <ThemeToggle />
-
       {/* Background Effects */}
 
       <HackBackground />
@@ -27,19 +22,16 @@ export const Home = () => {
       {/* Main Content */}
 
       <main>
-
         <HeroSection />
         <AboutSection />
         <MySkills />
         <ProjectsSection />
         <ContactSection />
-
       </main>
 
       {/* Footer */}
 
       <Footer />
-      
     </div>
   );
 };

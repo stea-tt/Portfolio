@@ -2,36 +2,31 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-
     //developpement
-
-    { name: "HTML/CSS", level: 95, category: "developpement" },
-    { name: "React", level: 95, category: "developpement" },
-    { name: "TailwindCSS", level: 95, category: "developpement" },
-    { name: "JavaScript", level: 95, category: "developpement" },
-    { name: "Python", level: 95, category: "developpement" },
-    { name: "C+", level: 95, category: "developpement" },
+    { name: "HTML/CSS", level: 70, category: "developpement" },
+    { name: "React", level: 50, category: "developpement" },
+    { name: "TailwindCSS", level: 50, category: "developpement" },
+    { name: "JavaScript", level: 60, category: "developpement" },
+    { name: "Python", level: 70, category: "developpement" },
+    { name: "C", level: 55, category: "developpement" },
 
     //tools
-
-    { name: "VMware", level: 95, category: "tools" },
-    { name: "VScode", level: 95, category: "tools" },
-    { name: "CiscoPKT", level: 95, category: "tools" },
-    { name: "Azure", level: 95, category: "??" },
+    { name: "VMware", level: 85, category: "tools" },
+    { name: "VScode", level: 75, category: "tools" },
+    { name: "CiscoPKT", level: 75, category: "tools" },
+    { name: "Azure", level: 60, category: "tools" },
     
     //Technologies & Systems
-    
-    { name: "Mysql", level: 95, category: "Technologies & Systems" },
-    { name: "Linux", level: 95, category: "Technologies & Systems" },
-    { name: "Windows/Server", level: 95, category: "Technologies & Systems" },
-    { name: "Splunk", level: 95, category: "Technologies & Systems" },
-    { name: "Zabbix", level: 95, category: "Technologies & Systems" },
-    { name: "Pfense", level: 95, category: "Technologies & Systems" },
-    { name: "NextCloud", level: 95, category: "Technologies & Systems" },
-    { name: "Proxmox", level: 95, category: "Technologies & Systems" },
-    { name: "Admin sys", level: 95, category: "Technologies & Systems" },
-    { name: "Networking", level: 95, category: "Technologies & Systems" },
-
+    { name: "Mysql", level: 65, category: "Technologies & Systems" },
+    { name: "Linux", level: 75, category: "Technologies & Systems" },
+    { name: "Windows/Server", level: 75, category: "Technologies & Systems" },
+    { name: "Splunk", level: 45, category: "Technologies & Systems" },
+    { name: "Zabbix", level: 65, category: "Technologies & Systems" },
+    { name: "Pfense", level: 70, category: "Technologies & Systems" },
+    { name: "NextCloud", level: 65, category: "Technologies & Systems" },
+    { name: "Proxmox", level: 65, category: "Technologies & Systems" },
+    { name: "Admin sys", level: 75, category: "Technologies & Systems" },
+    { name: "Networking", level: 75, category: "Technologies & Systems" },
 ];
 
 const categories = ["all", "developpement", "tools", "Technologies & Systems"];

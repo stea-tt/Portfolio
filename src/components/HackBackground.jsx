@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 
-// id, size, x, y, opacity, animationDuration
-// id, size, x, y, delay, animationDuration
-
 export const HackBackground = () => {
   const [hacks, setHacks] = useState([]);
   const [meteors, setMeteors] = useState([]);
