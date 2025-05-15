@@ -15,9 +15,9 @@ export const ContactSection = () => {
 
   const formRef = useRef();
 
-  const SERVICE_ID = "service_80uxx4c";
-  const TEMPLATE_ID = "template_e2h0rbl"; // corrigé ici
-  const PUBLIC_KEY = "JXyt99cGZIlJ1O-kn";
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
   const handleSubmit = (e) => {
     e.preventDefault();
