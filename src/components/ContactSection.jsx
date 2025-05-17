@@ -3,8 +3,10 @@ import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 export const ContactSection = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -49,24 +51,25 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 p-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary">Touch</span>
+          {t("get")}
+          <span className="text-primary"> {t("cont")} </span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          If you have a question or anything else, feel free to contact me.
+          {t("txt")}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Side */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-semibold mb-6">{t("inf")}</h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Email</h4>
+                  <h4 className="font-medium ">{t("mail")}</h4>
                   <a
                     href="mailto:simon.boisneault@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -81,7 +84,7 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Phone number</h4>
+                  <h4 className="font-medium">{t("tel")}</h4>
                   <a
                     href="tel:+33769345453"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -96,7 +99,7 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Location</h4>
+                  <h4 className="font-medium">{t("loc")}</h4>
                   <p className="text-muted-foreground">75000, Paris France</p>
                 </div>
               </div>
@@ -104,7 +107,7 @@ export const ContactSection = () => {
 
             <div className="pt-8">
               <h4 className="font-medium mb-4">
-                Connect with <span className="text-primary">me</span>
+                {t("se")} <span className="text-primary">{t("co")}</span>
               </h4>
               <div className="flex space-x-4 flex justify-center">
                 <a
@@ -122,7 +125,7 @@ export const ContactSection = () => {
 
           {/* Right Side: Form */}
           <div className="bg-card p-8 rounded-lg shadow-xs">
-            <h3 className="text-2xl font-semibold mb-6">Send a message</h3>
+            <h3 className="text-2xl font-semibold mb-6">{t("mess")}</h3>
 
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -130,7 +133,7 @@ export const ContactSection = () => {
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  Your name
+                  {t("name")}
                 </label>
                 <input
                   type="text"
@@ -151,7 +154,7 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  Your email
+                  {t("mail")}
                 </label>
                 <input
                   type="email"
@@ -172,7 +175,7 @@ export const ContactSection = () => {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  Your Message
+                  {t("message")}
                 </label>
                 <textarea
                   id="message"
@@ -183,7 +186,7 @@ export const ContactSection = () => {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  placeholder={t("placeholdermess")}
                 />
               </div>
 
@@ -194,7 +197,7 @@ export const ContactSection = () => {
                   "hacker-button w-full flex items-center justify-center gap-2"
                 )}
               >
-                {isSubmitting ? "Sending..." : "Send message"}
+                {isSubmitting ? t("sending") : t("send_message")}
                 <Send size={16} />
               </button>
             </form>

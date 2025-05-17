@@ -2,16 +2,19 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
-
-const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
-];
+import { LanguageToggle } from "./LanguageToogle";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation();
+  const navItems = [
+    { name: t("homep"), href: "#hero" },
+    { name: t("aboutp"), href: "#about" },
+    { name: t("skillsp"), href: "#skills" },
+    { name: t("projectsp"), href: "#projects" },
+    { name: t("contactp"), href: "#contact" },
+  ];
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,6 +62,7 @@ export const Navbar = () => {
             </a>
           ))}
           <ThemeToggle />
+          <LanguageToggle />
         </div>
       </div>
 
@@ -95,6 +99,9 @@ export const Navbar = () => {
 
           <div className="mt-4">
             <ThemeToggle />
+          </div>
+          <div className="mt-4">
+            <LanguageToggle />
           </div>
         </div>
       </div>

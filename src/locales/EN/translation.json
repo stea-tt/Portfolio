@@ -1,0 +1,102 @@
+{
+  "_______comment": "Footer",
+  "contbtn": "Contact me",
+
+  "______comment": "NavBar",
+  "homep": "Home",
+  "aboutp": "About",
+  "skillsp": "Skills",
+  "projectsp": "Projects",
+  "contactp": "Contact",
+
+  "_____comment": "Contact",
+  "get": "Get in ",
+  "cont": "touch",
+  "txt": "If you have a question or anything else, feel free to contact me.",
+  "inf": "Contact Information",
+  "mail": "Your email",
+  "tel": "Phone number",
+  "loc": "Location",
+  "se": "Connect with ",
+  "co": "me",
+  "mess": "Send a message",
+  "name": "Your name",
+  "message": "Your message",
+  "sending": "Sending...",
+  "send_message": "Send message",
+  "placeholdermess":"Hello, I'd like to talk about...",
+
+  "____comment": "Projects",
+  "projet": "Featured",
+  "sel": " project",
+  "skill": "Discover a selection of my projects in system administration, networking, and cybersecurity. These works demonstrate my technical skills and ability to design secure solutions.",
+  "git": "Check my Github",
+
+  "projects": {
+    "1": {
+      "title": "System Administration - DNS & DHCP",
+      "description": "Setup of a DHCP server with dynamic DNS under VMware using bind9 for a secure and reliable network infrastructure."
+    },
+    "2": {
+      "title": "Vehicle Rental System",
+      "description": "Design and implementation of a SQL database for a rental company managing 50 vehicles and 100 clients with a management interface."
+    },
+    "3": {
+      "title": "Multi-Site Network Architecture",
+      "description": "Design of a corporate network spread over 4 countries with 1000 PCs and inter-VLAN communication, implemented via Cisco Packet Tracer."
+    },
+    "4": {
+      "title": "Secure Virtualization Environment",
+      "description": "Deployment of a virtual infrastructure with Proxmox including Zabbix for monitoring, NextCloud for storage, and MySQL for data management."
+    }
+  },
+
+  "tags": {
+    "VMware": "VMware",
+    "bind9": "bind9",
+    "DHCP": "DHCP",
+    "DNS": "DNS",
+    "Linux": "Linux",
+    "MySQL": "MySQL",
+    "SQL": "SQL",
+    "Database Design": "Database Design",
+    "CiscoPKT": "CiscoPKT",
+    "Networking": "Networking",
+    "VLAN": "VLAN",
+    "Routing": "Routing",
+    "Proxmox": "Proxmox",
+    "Zabbix": "Zabbix",
+    "NextCloud": "NextCloud",
+    "Virtualization": "Virtualization"
+  },
+
+
+  "___comment": "Skills Page",
+  "my": "My",
+  "sk": " skills",
+  "all_cat": "All",
+  "dev_cat": "Development",
+  "tools_cat": "Tools",
+  "tech_cat": "Technologies & Systems",
+
+  "__comment": "Hero Page",
+  "hi": "Hi, I’m",
+  "si": " Simon",
+  "bo": " Boisneault",
+  "work": "See my work",
+  "scroll": "scroll",
+
+  "_comment": "About Page",
+  "about1": "I am Simon Boisneault, a second-year Bachelor student in Engineering and Cybersecurity at EFREI Paris. Passionate about vulnerability analysis and system administration, I am constantly seeking new opportunities to deepen my knowledge in cybersecurity. My academic background, complemented by diverse professional experiences, has provided me with a strong understanding of modern cybersecurity challenges.",
+  "about2": "My technical skills include proficiency in languages such as Python and C, web development, and management of Linux and Windows Server systems. I also have hands-on experience in securing networks, data protection, and virtualization using VMware. My recent internship at TVHconsulting allowed me to work on real-world projects such as network mapping, configuring security solutions, and migrating to Intune, further strengthening my operational cybersecurity expertise.",
+  "about": "About",
+  "me": " me",
+  "intouch": "Get in touch",
+  "download": "Download my CV",
+  "cyber": "Cybersecurity",
+  "cyber2": "Vulnerability analysis, network security, data protection, and setting up intrusion detection systems with tools like Sophos and Cyberwatch.",
+  "dev": "Development",
+  "dev2": "Skills in programming with Python, C, HTML/CSS, React JS and JavaScript. Creating automation scripts and developing solutions to enhance system security.",
+  "admin": "System Administration",
+  "admin2": "Managing virtual machines (Debian, pfsense, Kali, Windows Server), configuring DNS and DHCP servers, and administering complex networks."
+}
